@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+:root {
+    --menu-width: 60px;
+    --menu-height: 8px;
+    --menu-gap: 6px;
+    /* Makes color of hamburger bards black while keeping background transparent */
+    --foreground: #333;
+    --background: white;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--menu-gap)
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+    content: "";
+    width: var(--menu-width);
+    height: var(--menu-height);
+    background-color: var(--foreground);
+    border-radius: 9000px;
+}
+
+.hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
+
+.article-grid {
+    display: grid;
+    /* Keeps them displayed in a column format */
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 300px);
+    gap: 20px;
+}
+
+.article-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
