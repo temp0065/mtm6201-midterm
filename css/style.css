@@ -2,19 +2,34 @@ body {
     margin: 0;
 }
 
+.wrapper {
+    margin: 0 auto;
+    width: 375px;
+    background-color: #fcfcfc;
+    
+}
+
 :root {
     --menu-width: 60px;
     --menu-height: 8px;
     --menu-gap: 6px;
+    --menu-margin: 10px; 
+    --animation-timing: 0.5s ease-in-out;
     /* Makes color of hamburger bards black while keeping background transparent */
-    --foreground: #333;
+    --foreground: #999999;
     --background: white;
 }
 
 .hamburger-menu {
     display: flex;
     flex-direction: column;
-    gap: var(--menu-gap)
+    gap: var(--menu-gap);
+    width: max-content;
+    position: absolute;
+    right: var(--menu-margin);
+    top: var(--menu-margin);
+    z-index: 2;
+    cursor: pointer;
 }
 
 .hamburger-menu::before,
@@ -25,7 +40,11 @@ body {
     height: var(--menu-height);
     background-color: var(--foreground);
     border-radius: 9000px;
+    /* makes it so the top bar rotates around the left center, instead of through the right */
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing);
 }
+
 
 .hamburger-menu input {
     appearance: none;
@@ -33,6 +52,25 @@ body {
     margin: 0;
     outline: none;
     pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+    rotate: 50deg;
+}
+
+.hamburger-menu:has(input:checked)::after {
+    rotate: -50deg;
+}
+
+.hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .article-grid {
@@ -48,3 +86,39 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+.round-button-1 {
+    background-color: #ff3300;
+    border: none;
+    padding: 13px 45px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    color: white;
+}
+
+.round-button-2 {
+    background-color: #ffffff;
+    border: 1px solid #ff3300;
+    padding: 13px 45px;
+    border-radius: 40px;
+    color: #ff3300;
+}
+
+/* @media (min-width: 380px) {
+    .wrapper {
+        width: 100%;
+    }
+    .article-grid {
+        grid-template-columns: 50% 50%;
+    }
+    .article-flex {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+} */
