@@ -23,6 +23,9 @@ body {
     --background: white;
     --large-par-size: 1.5rem;
     --par-color: #999999;
+    --button-font-size: 1.5rem;
+    --button-font-weight: 600;
+    --button-padding: 20px 50px;
 }
 
 .hamburger-menu {
@@ -101,8 +104,10 @@ footer {
 .round-button-1 {
     background-color: #ff3300;
     border: none;
-    padding: 13px 45px;
+    padding: var(--button-padding);
     margin-top: 15px;
+    font-size: var(--button-font-size);
+    font-weight: var(--button-font-weight);
     margin-bottom: 10px;
     border-radius: 40px;
     color: white;
@@ -111,9 +116,12 @@ footer {
 .round-button-2 {
     background-color: #ffffff;
     border: 1px solid #ff3300;
-    padding: 13px 45px;
+    padding: var(--button-padding);
+    font-size: var(--button-font-size);
+    font-weight: var(--button-font-weight);
     border-radius: 40px;
     color: #ff3300;
+    margin-bottom: 40px;
 }
 
 .square-button-1 {
