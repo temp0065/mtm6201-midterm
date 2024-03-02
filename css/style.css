@@ -9,7 +9,6 @@ body {
     margin: 0 auto;
     width: 375px;
     background-color: #fcfcfc;
-    
 }
 
 :root {
@@ -167,6 +166,17 @@ header h3 {
 .app-image {
     margin: 0 auto;
     width: 100%;
+}
+
+.product-image {
+    margin: 0 auto;
+    width: 100%;
+    z-index: 2;
+}
+
+.search-bar {
+    border: 2px solid black;
+    border-radius: 50px;
 }
 
 /* @media (min-width: 380px) {
