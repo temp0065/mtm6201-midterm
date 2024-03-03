@@ -94,8 +94,7 @@ body {
     display: grid;
     /* Keeps them displayed in a column format */
     grid-template-columns: 100%;
-    grid-template-rows: repeat(3, 350px);
-    gap: 50px;
+    grid-template-rows: repeat(3, 400px 700px);
 }
 
 .article-flex {
@@ -200,6 +199,7 @@ header h3 {
     color: white;
     text-align: center;
     font-size: var(--h1-size);
+    margin: 0;
 }
 
 .app-download p {
