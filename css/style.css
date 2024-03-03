@@ -208,15 +208,24 @@ header h2 {
     color: var(--h1-colour);
 }
 
+#update-button {
+    margin: 0 auto;
+}
+
 /* @media (min-width: 380px) {
     .wrapper {
         width: 100%;
     }
     .article-grid {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 500px 1000px;
+        grid-template-rows: repeat(3, 500px);
+        gap: 0px;
     }
     .article-flex {
         flex-direction: column;
         justify-content: space-evenly;
+    }
+    .header-flex button {
+        flex-direction: row-reverse
     }
 } */
