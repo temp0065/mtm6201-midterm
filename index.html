@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link href="css/reset.css" rel="reset">
-    <link href="css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="css/reset.css" rel="reset">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -16,7 +16,9 @@
         <label class="hamburger-menu">
             <input type="checkbox">
         </label>
-        <aside>
+        <header class="header-nav">
+            <img id="header-logo" src="images/logo-mockup.svg" alt="Logo for Bella Onojie">
+            <alt></alt>
             <nav class="sidebar">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -24,9 +26,9 @@
                     <li><a href="product.html">Product</a></li>
                 </ul>
             </nav>
-        </aside> 
-        <header class="header-grid">
-            <div class="header-flex">
+        </header> 
+        <main class="main-home">
+            <div class="main-flex">
                 <h3>Food app</h3>
                 <h1>Why stay hungry when you can order from Bella Onojie</h1>
                 <p>Download the Bella Onoje's food app now on</p>
@@ -35,8 +37,8 @@
                 <img class="app-image" src="images/app-photo.png" alt="Image of a food app">
                 <h2>How the app works</h2>
             </div>
-        </header>
-        <hr>
+        </main>
+        <hr class="line-break">
         <div class="article-grid">
             <article class="article-flex">
                 <h2>Create an account</h2>

@@ -18,8 +18,8 @@ body {
 }
 
 :root {
-    --menu-width: 60px;
-    --menu-height: 8px;
+    --menu-width: 35px;
+    --menu-height: 5px;
     --menu-gap: 6px;
     --menu-margin: 10px; 
     --animation-timing: 0.5s ease-in-out;
@@ -42,7 +42,6 @@ body {
     flex-direction: column;
     gap: var(--menu-gap);
     width: max-content;
-    position: absolute;
     right: var(--menu-margin);
     top: var(--menu-margin);
     z-index: 2;
@@ -84,7 +83,7 @@ body {
     width: 0;
 }
 
-.header-flex {
+.main-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,7 +92,7 @@ body {
 .article-grid {
     display: grid;
     /* Keeps them displayed in a column format */
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 400px 700px);
 }
 
@@ -138,6 +137,9 @@ footer {
     padding: 16px 23px;
     border-radius: 7px;
     color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: var(--button-font-weight);
+    margin: 5px;
 }
 
 .square-button-2 {
@@ -146,6 +148,8 @@ footer {
     padding: 13px 23px;
     border-radius: 7px;
     color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: var(--button-font-weight);
 }
 
 article p {
@@ -163,13 +167,13 @@ article h3 {
     color: var(--h1-colour);
 }
 
-header p {
+main p {
     font-size: var(--large-par-size);
     color: var(--par-color);
     font-weight: var(--par-weight);
 }
 
-header h3 {
+main h3 {
     color: var(--par-color);
     font-weight: 600;
     font-size: 1rem;
@@ -193,6 +197,8 @@ header h3 {
 
 .app-download {
     background-color: #252b42;
+    padding: 70px;
+    text-align: center;
 }
 
 .app-download h2 {
@@ -211,7 +217,7 @@ h1 {
     color: var(--h1-colour);
 }
 
-header h2 {
+main h2 {
     color: var(--h1-colour);
 }
 
@@ -246,20 +252,58 @@ header h2 {
     color: #FA4A0C;
 }
 
-/* @media (min-width: 380px) {
+.line-break {
+    border: 2px solid #e4e4e4;
+}
+
+.header-nav {
+    background-color: white;
+}
+
+#header-logo {
+    width: 40%;
+    margin: 10px;
+}
+
+@media (min-width: 380px) {
     .wrapper {
         width: 100%;
     }
     .article-grid {
-        grid-template-columns: 500px 1000px;
-        grid-template-rows: repeat(3, 500px);
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
         gap: 0px;
     }
+
+    .main-home {
+        background-image: url(images/banner-image.png);
+        color: white;
+    }
+
     .article-flex {
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .header-flex button {
-        flex-direction: row-reverse
+
+    .app-image {
+        width: 90%;
     }
-} */
+
+    .app-download {
+        background-image: url(images/app-download-image.png);
+        padding: 165px;
+        text-align: center;
+    }
+
+    .app-download p {
+        color: white;
+    }
+
+    .main-flex .app-image {
+        width: auto;
+    }
+
+    .line-break {
+        width: 60%;
+    }
+}
