@@ -191,8 +191,10 @@ main h3 {
 }
 
 .search-bar {
-    border: 2px solid black;
-    border-radius: 50px;
+    background-color: #efeeee;
+    padding: 14px 30px;
+    border-radius: 30px;
+    border: 1px solid black;
 }
 
 .app-download {
@@ -222,7 +224,13 @@ main h2 {
 }
 
 #update-button {
-    margin: 0 auto;
+    border: none;
+    padding: 20px 120px;
+    background-color: #FA4A0C;
+    color: white;
+    border-radius: 30px;
+    font-weight: var(--button-font-weight);
+    font-family: "Montserrat", sans-serif;
 }
 
 .option-button {
@@ -236,20 +244,37 @@ main h2 {
     margin-bottom: 20px;
 }
 
+.profile {
+    padding: 5px;
+    width: 80%;
+    background-color: white;
+}
+
+.profile p {
+    font-size: 1rem;
+}
+
+.profile hr {
+    width: 90%;
+}
+
 .profile-body {
     color: black;
 }
 
 .profile-wrapper h1 {
     color: black;
+    margin-top: 0;
 }
 
 .profile-wrapper h2 {
     color: black;
+    font-size: 1.2rem;
 }
 
 #change {
     color: #FA4A0C;
+    font-size: 1rem;
 }
 
 .line-break {
@@ -265,7 +290,15 @@ main h2 {
     margin: 10px;
 }
 
-@media (min-width: 380px) {
+.food-categories ul {
+    list-style: none;
+}
+
+.food-categories li:hover {
+    color: #FA4A0C;
+}
+
+/* @media (min-width: 380px) {
     .wrapper {
         width: 100%;
     }
@@ -306,4 +339,4 @@ main h2 {
     .line-break {
         width: 60%;
     }
-}
+} */
