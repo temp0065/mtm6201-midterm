@@ -7,14 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link href="css/reset.css" rel="reset">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <div class="profile-wrapper">
+        <span class="material-symbols-outlined">
+            navigate_before
+        </span>
         <h1>My Profile</h1>
             <article>
-                <div>
                     <h2>Personal Details</h2>
                     <p id="change">Change</p>
                     <div class="profile">
@@ -25,16 +28,20 @@
                         <p>+234 9011039271</p>
                         <hr>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum ornare pretium.</p>
+                    </div>
             </article>
             <nav class="options-select">
                 <ul>
                     <li class="option-button">Orders</li>
+                    <span class="material-symbols-outlined">
+                        navigate_next
+                    </span>
                     <li class="option-button">Pending Reviews</li>
                     <li class="option-button">FAQ</li>
                     <li class="option-button">Help</li>
                 </ul>
+                <button id="update-button">Update</button>
             </nav>
-        <button id="update-button">Update</button>
     </div>
 </body>
 </html>
