@@ -20,13 +20,14 @@
         </header>
         <main class="main-product">
             <h1>Delicious food for you</h1>
-                <form>
-                    <input type="text" placeholder="Search" name="search" class="search-bar"> <span class="material-symbols-outlined">search</span> <!--Creates search button-->
+                <form class="search">
+                    <button type="submit"> <span class="material-symbols-outlined">search</span></button> <!--Creates search button-->
+                    <input type="text" placeholder="Search" name="search" class="search-bar">
                 </form>
             </main>
         <nav class="food-categories" itemscope itemtype="https://schema.org/Product">
             <ul>
-                <li itemprop="">Foods</li>
+                <li itemprop="item">Foods</li>
                 <li itemprop="item">Drinks</li>
                 <li itemprop="item">Snacks</li>
                 <li itemprop="item">Sauce</li>
@@ -36,13 +37,17 @@
         <section class="product-section" itemscope itemtype="https://schema.org/Product">
             <div class="product">
                 <img class="product-image" src="images/veggie-bowl.png" alt="Plate of a veggie tomato mix" itemprop="image">
-                <h2 itemprop="name">Veggie tomato mix</h2>
-                <p itemprop="offers">N1,900</p>
+                <div class="product-padding">
+                    <h2 itemprop="name">Veggie tomato mix</h2>
+                    <p itemprop="offers">N1,900</p>
+                </div>
             </div>
             <div class="product">
                 <img class="product-image" src="images/food-1.png" alt="Plate of food" itemprop="image">
-                <h2 itemprop="name">Spicy food sauce</h2>
-                <p itemprop="offers">N2,300</p>
+                <div class="product-padding">
+                    <h2 itemprop="name">Spicy food sauce</h2>
+                    <p itemprop="offers">N2,300</p>
+                </div>
             </div>
         </section>
         <nav class="bottom-nav">

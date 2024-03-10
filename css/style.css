@@ -149,12 +149,37 @@ main h3 {
     display: block;
 }
 
-.search-bar {
+.search {
+    width: 58%;
     background-color: #efeeee;
-    padding: 14px 30px;
-    border-radius: 30px;
     border: 1px solid black;
-    margin: 0 auto;
+    border-radius: 60px;
+    display: flex;
+    padding: 7px 20px;
+    margin-left: 38px;
+}
+
+.search-bar {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px 0px;
+    font-size: 1rem;
+    color: black;
+}
+
+.search-bar::placeholder {
+    color: black;
+    /* Changes colour of the placeholder text */
+}
+
+.search button .material-symbols-outlined {
+    font-size: 1.7rem;
+}
+
+.search button {
+    border: none;
 }
 
 .app-download {
@@ -275,13 +300,29 @@ main h2 {
 
 .food-categories ul {
     list-style: none;
+    display: flex;
+    margin: 30px 0px;
+}
+
+.food-categories li {
+    padding: 0px 12px;
+    font-weight: 500;
+}
+
+#see-more {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 40px;
+    color: #FA4A0C;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .food-categories li:hover {
     color: #FA4A0C;
 }
 
-.product {
+.product-padding {
     background-color: white;
     width: 60%;
     border-radius: 20px;
@@ -306,32 +347,23 @@ main h2 {
     font-weight: 700;
 }
 
-.product-section {
-    display: grid;
-    grid-template-columns: 260px 190px;
-    z-index: 1;
-}
-
-.product-image {
-    margin: 0 auto;
-    width: 30%;
-    z-index: 2;
-}
-
 .bottom-nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 40px 0px;
 }
 
 .bottom-nav .material-symbols-outlined {
     color: #adadaf;
+    font-size: 1.8rem;
 }
 
 .bottom-nav .material-symbols-outlined:hover {
     font-variation-settings: 
     'FILL' 1;
     color: #FA4A0C;
+    filter: drop-shadow(1px 1px 1rem #D73800);
 }
 
 #profile-image {
@@ -342,7 +374,13 @@ main h2 {
     display: none;
 }
 
-@media (min-width: 415px) {
+#profile-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+
+/* @media (min-width: 415px) {
     .wrapper {
         width: 100%;
     }
@@ -425,4 +463,4 @@ main h2 {
     .home-footer p {
         font-size: 0.9rem;
     }
-}
+} */
