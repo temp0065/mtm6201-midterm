@@ -11,6 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Adds wrapper for mobile layout -->
     <div class="wrapper">
         <header class="header-nav">
             <img id="header-logo" src="images/logo-mockup.svg" alt="Logo for Bella Onojie">
@@ -31,10 +32,10 @@
                 <button class="round-button-2">App Store</button>
                 <img class="app-image" src="images/app-photo.png" alt="Image of a food app">
                 <h2>How the app works</h2>
-            </div>
+            </div> <!-- Close div for flexbox-->   
         </main>
-        <hr class="line-break">
-        <div class="article-grid">
+        <hr class="line-break"> <!--Creates line to break up page-->
+        <div class="article-grid"> <!--Makes text and items into grids so it can change from a column layout in mobile into a 2 column layout in desktop -->
             <article class="article-flex">
                 <h2 class="article-items">Create an account</h2>
                 <h3 class="article-items">Create/login to an existing account to get started.</h3>
@@ -59,17 +60,19 @@
 
             <img class="app-image" src="images/payment-screen.png" alt="Payment screen on app">
         </div>
-        <section class="app-download">
-            <h2>Download the app now</h2>
-            <p>Click the buttons to purchase the app, or try it for free.</p>
-            <button class="square-button-1">Buy Now</button>
-            <button class="square-button-2">Try For Free</button>
+
+        <section class="app-download" itemscope itemtype="https://schema.org/Product">
+            <h2 itemprop="itemOffered">Download the app now</h2>
+            <p itemprop="itemOffered">Click the buttons to purchase the app, or try it for free.</p>
+            <button itemprop="itemOffered" class="square-button-1">Buy Now</button>
+            <button itemprop="itemOffered" class="square-button-2">Try For Free</button>
         </section>
-        <footer class="home-footer">
-            <img id="footer-logo" src="images/logo-mockup.svg" alt="Logo for Bella Onojie">
+
+        <footer class="home-footer" itemscope itemtype="https://schema.org/Organization">
+            <img id="footer-logo" src="images/logo-mockup.svg" alt="Logo for Bella Onojie" itemprop="logo">
             <img src="images/social-media.svg" alt="Social media icons">
-            <p>Copyright 2020 Bella Onojie</p>
+            <p itemprop="brand">Copyright 2020 Bella Onojie</p>
         </footer>
-    </div>
+    </div> <!--Closes wrapper-->
 </body>
 </html>

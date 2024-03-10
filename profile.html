@@ -12,36 +12,41 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="profile-wrapper">
-        <span class="material-symbols-outlined">
+    <div class="profile-wrapper"> <!-- Creates custom wrapper for this page-->
+        <span class="material-symbols-outlined"> <!--Back arrow-->
             navigate_before
         </span>
         <h1>My Profile</h1>
             <article>
                     <h2>Personal Details</h2>
                     <p id="change">Change</p>
-                    <div class="profile">
+                    <div class="profile" itemscope itemtype="https://schema.org/Person">
                         <img id="profile-image" src="images/profile-picture.png" alt="John's profile picture">
-                        <h2>John Doe</h2>
-                        <p>JohnDoe@gmail.com</p>
+                        <h2 itemprop="name">John Doe</h2>
+                        <p itemprop="email">JohnDoe@gmail.com</p>
                         <hr>
-                        <p>+234 9011039271</p>
+                        <p itemprop="telephone">+234 9011039271</p>
                         <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum ornare pretium.</p>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum ornare pretium.</p>
                     </div>
             </article>
             <nav class="options-select">
                 <ul>
-                    <li class="option-button">Orders</li>
-                    <span class="material-symbols-outlined">
+                    <li class="option-button">Orders <span class="material-symbols-outlined">
                         navigate_next
-                    </span>
-                    <li class="option-button">Pending Reviews</li>
-                    <li class="option-button">FAQ</li>
-                    <li class="option-button">Help</li>
+                    </span></li>
+                    <li class="option-button">Pending Reviews <span class="material-symbols-outlined">
+                        navigate_next
+                    </span></li>
+                    <li class="option-button">FAQ <span class="material-symbols-outlined">
+                        navigate_next
+                    </span></li>
+                    <li class="option-button">Help <span class="material-symbols-outlined">
+                        navigate_next
+                    </span></li>
                 </ul>
                 <button id="update-button">Update</button>
             </nav>
-    </div>
+    </div> <!--Closes wrapper-->
 </body>
 </html>

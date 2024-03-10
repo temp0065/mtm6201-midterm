@@ -197,10 +197,21 @@ main h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.options-select .material-symbols-outlined {
+    font-size: 2rem;
 }
 
 .options-select ul {
-    padding-left: 0;
+    padding: 0;
+}
+
+.options-select li {
+    padding: 15px;
+    text-align: start;
+    font-size: 1.3rem;
 }
 
 .option-button {

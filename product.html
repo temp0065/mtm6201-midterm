@@ -12,7 +12,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper"> <!--Wrapper for mobile layout-->
         <header>
             <span class="material-symbols-outlined">
                 shopping_cart
@@ -21,28 +21,28 @@
         <main class="main-product">
             <h1>Delicious food for you</h1>
                 <form>
-                    <input type="text" placeholder="Search" name="search" class="search-bar">
+                    <input type="text" placeholder="Search" name="search" class="search-bar"> <span class="material-symbols-outlined">search</span> <!--Creates search button-->
                 </form>
             </main>
-        <nav class="food-categories">
+        <nav class="food-categories" itemscope itemtype="https://schema.org/Product">
             <ul>
-                <li>Foods</li>
-                <li>Drinks</li>
-                <li>Snacks</li>
-                <li>Sauce</li>
+                <li itemprop="">Foods</li>
+                <li itemprop="item">Drinks</li>
+                <li itemprop="item">Snacks</li>
+                <li itemprop="item">Sauce</li>
             </ul>
         </nav>
         <p id="see-more">see more</p>
-        <section class="product-section">
+        <section class="product-section" itemscope itemtype="https://schema.org/Product">
             <div class="product">
-                <img class="product-image" src="images/veggie-bowl.png" alt="Plate of a veggie tomato mix">
-                <h2>Veggie tomato mix</h2>
-                <p>N1,900</p>
+                <img class="product-image" src="images/veggie-bowl.png" alt="Plate of a veggie tomato mix" itemprop="image">
+                <h2 itemprop="name">Veggie tomato mix</h2>
+                <p itemprop="offers">N1,900</p>
             </div>
             <div class="product">
-                <img class="product-image" src="images/food-1.png" alt="Plate of food">
-                <h2>Spicy food sauce</h2>
-                <p>N2,300</p>
+                <img class="product-image" src="images/food-1.png" alt="Plate of food" itemprop="image">
+                <h2 itemprop="name">Spicy food sauce</h2>
+                <p itemprop="offers">N2,300</p>
             </div>
         </section>
         <nav class="bottom-nav">
@@ -59,6 +59,6 @@
                 history
             </span>
         </nav>
-    </div>
+    </div> <!--Closes wrapper-->
 </body>
 </html>
