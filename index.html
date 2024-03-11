@@ -17,17 +17,22 @@
             <li><a href="#main-nav">Skip to main nav</a></li>
             <li><a href="#main-content">Skip to main content</a></li>
         </ul>
-        <header class="header-nav" id="main-nav">
-            <img id="header-logo" src="images/logo-mockup.svg" alt="Logo for Bella Onojie">
+        <header class="header-nav" id="main-nav" role="navigation">
+            <img class="header-logo" src="images/logo-mockup.svg" alt="Logo for Bella Onojie">
             <nav class="sidebar">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a href="product.html">Product</a></li>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="profile.html" class="nav-link">Profile</a></li>
+                    <li class="nav-item"><a href="product.html" class="nav-link">Product</a></li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
         </header> 
-        <main class="main-home" id="main-content">
+        <main class="main-home" id="main-content" role="main">
             <div class="main-flex">
                 <h3>Food app</h3>
                 <h1>Why stay hungry when you can order from Bella Onojie</h1>
@@ -65,14 +70,14 @@
             <img class="app-image" src="images/payment-screen.png" alt="Payment screen on app">
         </div>
 
-        <section class="app-download" itemscope itemtype="https://schema.org/Product">
+        <section class="app-download" itemscope itemtype="https://schema.org/Product" role="complementary">
             <h2 itemprop="itemOffered">Download the app now</h2>
             <p itemprop="itemOffered">Click the buttons to purchase the app, or try it for free.</p>
             <button itemprop="itemOffered" class="square-button-1">Buy Now</button>
             <button itemprop="itemOffered" class="square-button-2">Try For Free</button>
         </section>
 
-        <footer class="home-footer" itemscope itemtype="https://schema.org/Organization">
+        <footer class="home-footer" itemscope itemtype="https://schema.org/Organization" role="contentinfo">
             <img id="footer-logo" src="images/logo-mockup.svg" alt="Logo for Bella Onojie" itemprop="logo">
             <img src="images/social-media.svg" alt="Social media icons">
             <p itemprop="brand">Copyright 2020 Bella Onojie</p>

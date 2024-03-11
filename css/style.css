@@ -302,6 +302,10 @@ main h2 {
     font-size: 2rem;
 }
 
+#profile-back-arrow:hover {
+    color: #FA4A0C;
+}
+
 #change {
     color: #FA4A0C;
     font-size: 1rem;
@@ -317,12 +321,7 @@ main h2 {
 .line-break {
     border: 2px solid #e4e4e4;
 }
-
-.header-nav {
-    background-color: white;
-}
-
-#header-logo {
+.header-logo {
     width: 40%;
     margin: 10px;
 }
@@ -416,10 +415,6 @@ main h2 {
     border: 4px solid black;
 }
 
-.bottom-nav .material-symbols-outlined      :focus {
-    border: 2px solid black;
-}
-
 #profile-image {
     float: left;
 }
@@ -443,7 +438,7 @@ main h2 {
 /* Makes skip links off page, and gives them style */
 .skip-links a {
     position: absolute;
-    top: -3em;
+    top: -8em;
     background-color: #FA4A0C;
     color: white;
     padding: .5em 1em;
@@ -455,9 +450,60 @@ main h2 {
     top: 0;
 }
 
+.material-symbols-outlined:focus {
+    border: 2px solid black;
+}
+
 @media (min-width: 415px) {
     .wrapper {
         width: 100%;
+    }
+
+    .header-nav {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        list-style: none;
+    }
+    
+    /* Creates delay during hover*/
+    .nav-link {
+        transition: 0.7s ease;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+    
+    .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: black;
+    }
+    
+    .nav-link:hover {
+        color: #FA4A0C;
+    }
+    
+    .header-logo {
+        width: 10%;
     }
 
     .article-grid {
@@ -571,3 +617,41 @@ main h2 {
         font-size: 2rem;
     }
 } 
+
+@media (max-width:460) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
