@@ -414,6 +414,8 @@ main h2 {
 .product img{
     width: 100%;
     margin: 0 auto;
+    z-index: 2;
+    filter: drop-shadow(1px 1px 1rem #00000033);
 }
 
 .main-product h1 {
@@ -472,6 +474,10 @@ main h2 {
     margin: 0px 25px;
 }
 
+.profile-wrapper .header-nav {
+    display: none;
+}
+
 .skip-links {
     margin: 0;
     padding: 0;
@@ -497,7 +503,7 @@ main h2 {
     border: 2px solid black;
 }
 
-/* @media (min-width: 415px) {
+@media (min-width: 415px) {
     .wrapper {
         width: 100%;
     }
@@ -648,7 +654,29 @@ main h2 {
         padding: 0px 80px;
         font-size: 2rem;
     }
-}  */
+
+    /* Below is for profile page */
+    .profile-wrapper {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #profile-heading {
+        justify-content: center;
+    }
+
+    .profile-wrapper .header-nav {
+        display: block;
+    }
+
+    #profile-back-arrow {
+        display: none;
+    }
+} 
 
 @media (max-width: 460px) {
     #menu__toggle {
