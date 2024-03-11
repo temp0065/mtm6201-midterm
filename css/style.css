@@ -234,9 +234,8 @@ main h2 {
 }
 
 .options-select li {
-    padding: 15px;
     text-align: start;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .option-button {
@@ -245,17 +244,31 @@ main h2 {
     font-weight: 600;
     font-size: var(--option-size);
     background-color: white;
+    padding: 10px;
     border-radius: 20px;
-    padding: 20px;
     margin-bottom: 20px;
 }
 
+.option-button .material-symbols-outlined {
+    align-items: flex-end;
+}
+
 .profile {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
+    margin: 0 auto;
+    padding: 20px 20px 35px;
     width: 80%;
     background-color: white;
+    border-radius: 20px;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-item {
+    margin: 4px 10px;
 }
 
 .profile p {
@@ -272,12 +285,17 @@ main h2 {
 
 .profile-wrapper h1 {
     color: black;
-    margin-top: 0;
+    margin: 20px 35px;
 }
 
 .profile-wrapper h2 {
     color: black;
     font-size: 1.2rem;
+}
+
+#profile-back-arrow {
+    margin: 30px;
+    font-size: 2rem;
 }
 
 #change {
@@ -322,11 +340,19 @@ main h2 {
     color: #FA4A0C;
 }
 
+#main-image {
+    align-items: center;
+    min-width: 0;
+}
+
 .product-padding {
+    display: grid;
     background-color: white;
-    width: 60%;
     border-radius: 20px;
     z-index: 1;
+    width: 40%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px;
 }
 
 .main-product h1 {
@@ -377,10 +403,10 @@ main h2 {
 #profile-heading {
     display: flex;
     justify-content: space-between;
-    margin: 0px 50px;
+    margin: 0px 25px;
 }
 
-/* @media (min-width: 415px) {
+@media (min-width: 415px) {
     .wrapper {
         width: 100%;
     }
@@ -418,8 +444,9 @@ main h2 {
         justify-content: space-evenly;
     }
 
-    .app-image {
-        width: 90%;
+    #main-image {
+        width: 30%;
+        margin: 0 auto;
     }
 
     .app-download {
@@ -463,4 +490,35 @@ main h2 {
     .home-footer p {
         font-size: 0.9rem;
     }
-} */
+
+    #header-logo {
+        width: 10%;
+    }
+
+    /* Below are for product page */
+    .search {
+        margin: 0 auto;
+        width: 30%;
+    } /* Centers search bar */
+
+    .food-categories ul {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .main-product h1 {
+        text-align: center;
+        margin: 0 auto;
+        padding: 20px 0px;
+        font-size: 3rem;
+    }
+
+    .bottom-nav {
+        justify-content: center;
+    }
+
+    .bottom-nav .material-symbols-outlined{
+        padding: 0px 80px;
+        font-size: 2rem;
+    }
+} 

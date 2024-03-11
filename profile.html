@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="profile-wrapper"> <!-- Creates custom wrapper for this page-->
-        <span class="material-symbols-outlined"> <!--Back arrow-->
+        <span class="material-symbols-outlined" id="profile-back-arrow"> <!--Back arrow-->
             navigate_before
         </span>
         <h1>My Profile</h1>
@@ -24,12 +24,14 @@
                     </div>
                     <div class="profile" itemscope itemtype="https://schema.org/Person">
                         <img id="profile-image" src="images/profile-picture.png" alt="John's profile picture">
-                        <h2 itemprop="name">John Doe</h2>
-                        <p itemprop="email">JohnDoe@gmail.com</p>
-                        <hr>
-                        <p itemprop="telephone">+234 9011039271</p>
-                        <hr>
-                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum ornare pretium.</p>
+                        <div class="profile-content">
+                            <h2 itemprop="name" class="profile-item">John Doe</h2>
+                            <p itemprop="email" class="profile-item">JohnDoe@gmail.com</p>
+                            <hr>
+                            <p itemprop="telephone" class="profile-item">+234 9011039271</p>
+                            <hr>
+                            <p itemprop="description" class="profile-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
                     </div>
             </article>
             <nav class="options-select">
