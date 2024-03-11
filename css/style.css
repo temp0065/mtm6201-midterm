@@ -434,7 +434,7 @@ main h2 {
     margin: 0px 25px;
 }
 
-/* @media (min-width: 415px) {
+@media (min-width: 415px) {
     .wrapper {
         width: 100%;
     }
@@ -549,4 +549,4 @@ main h2 {
         padding: 0px 80px;
         font-size: 2rem;
     }
-}  */
+} 
