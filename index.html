@@ -13,7 +13,11 @@
 <body>
     <!-- Adds wrapper for mobile layout -->
     <div class="wrapper">
-        <header class="header-nav">
+        <ul class="skip-links">
+            <li><a href="#main-nav">Skip to main nav</a></li>
+            <li><a href="#main-content">Skip to main content</a></li>
+        </ul>
+        <header class="header-nav" id="main-nav">
             <img id="header-logo" src="images/logo-mockup.svg" alt="Logo for Bella Onojie">
             <nav class="sidebar">
                 <ul>
@@ -23,7 +27,7 @@
                 </ul>
             </nav>
         </header> 
-        <main class="main-home">
+        <main class="main-home" id="main-content">
             <div class="main-flex">
                 <h3>Food app</h3>
                 <h1>Why stay hungry when you can order from Bella Onojie</h1>
