@@ -72,6 +72,10 @@ body {
     font-weight: 600;
 }
 
+button:focus {
+    border: 2px solid black;
+}
+
 .round-button-1 {
     background-color: #FA4A0C;
     border: none;
@@ -301,6 +305,13 @@ main h2 {
 #change {
     color: #FA4A0C;
     font-size: 1rem;
+    margin: 15.936px 0px;
+    text-decoration: none;
+}
+
+/* Adds a focus state to make it more accesible */
+#change:focus {
+    border: 2px solid black;
 }
 
 .line-break {
@@ -327,6 +338,11 @@ main h2 {
     font-weight: 500;
 }
 
+.food-categories a {
+    text-decoration: none;
+    color: black;
+}
+
 #see-more {
     display: flex;
     justify-content: flex-end;
@@ -336,8 +352,12 @@ main h2 {
     font-weight: 500;
 }
 
-.food-categories li:hover {
+.food-categories a:hover {
     color: #FA4A0C;
+}
+
+.food-categories a:focus {
+    border: 4px solid black;
 }
 
 #main-image {
@@ -392,6 +412,14 @@ main h2 {
     filter: drop-shadow(1px 1px 1rem #D73800);
 }
 
+.bottom-nav a:focus {
+    border: 4px solid black;
+}
+
+.bottom-nav .material-symbols-outlined      :focus {
+    border: 2px solid black;
+}
+
 #profile-image {
     float: left;
 }
@@ -406,7 +434,7 @@ main h2 {
     margin: 0px 25px;
 }
 
-@media (min-width: 415px) {
+/* @media (min-width: 415px) {
     .wrapper {
         width: 100%;
     }
@@ -521,4 +549,4 @@ main h2 {
         padding: 0px 80px;
         font-size: 2rem;
     }
-} 
+}  */
