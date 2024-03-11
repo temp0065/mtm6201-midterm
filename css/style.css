@@ -380,6 +380,7 @@ main h2 {
 
 .food-categories a:hover {
     color: #FA4A0C;
+    transition: 0.3s ease;
 }
 
 .food-categories a:focus {
@@ -391,14 +392,28 @@ main h2 {
     min-width: 0;
 }
 
-.product-padding {
+.product {
     display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 10px;
+    margin: 40px 0;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 20px;
-    z-index: 1;
-    width: 40%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px;
+}
+
+.product-text {
+    margin: 0px 30px 30px;
+    text-align: center;
+}
+
+.product img{
+    width: 100%;
+    margin: 0 auto;
 }
 
 .main-product h1 {
@@ -436,6 +451,7 @@ main h2 {
     'FILL' 1;
     color: #FA4A0C;
     filter: drop-shadow(1px 1px 1rem #D73800);
+    transition: 0.5s ease           ;
 }
 
 .bottom-nav a:focus {
@@ -481,7 +497,7 @@ main h2 {
     border: 2px solid black;
 }
 
-@media (min-width: 415px) {
+/* @media (min-width: 415px) {
     .wrapper {
         width: 100%;
     }
@@ -632,7 +648,7 @@ main h2 {
         padding: 0px 80px;
         font-size: 2rem;
     }
-} 
+}  */
 
 @media (max-width: 460px) {
     #menu__toggle {
