@@ -376,6 +376,15 @@ main h2 {
     color: #FA4A0C;
     font-size: 0.8rem;
     font-weight: 500;
+    text-decoration: none;
+}
+
+#see-more:hover {
+    text-decoration: underline;
+}
+
+#see-more:focus {
+    border: 2px solid black;
 }
 
 .food-categories a:hover {
@@ -653,6 +662,10 @@ main h2 {
     .bottom-nav .material-symbols-outlined{
         padding: 0px 80px;
         font-size: 2rem;
+    }
+
+    .product {
+        justify-content: center;
     }
 
     /* Below is for profile page */
