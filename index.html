@@ -17,18 +17,23 @@
             <li><a href="#main-nav">Skip to main nav</a></li>
             <li><a href="#main-content">Skip to main content</a></li>
         </ul>
-        <header class="header-nav" id="main-nav" role="navigation">
+        <header class="header-nav" id="main-nav">
             <img class="header-logo" src="images/logo-mockup.svg" alt="Logo for Bella Onojie">
-            <nav class="sidebar">
+            <nav class="sidebar" role="navigation"> 
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox">
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link">Home</a></li>
+                    <hr class="nav-break">
                     <li class="nav-item"><a href="profile.html" class="nav-link">Profile</a></li>
+                    <hr class="nav-break">
                     <li class="nav-item"><a href="product.html" class="nav-link">Product</a></li>
+                    <hr class="nav-break">
                 </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
                 </div>
             </nav>
         </header> 
