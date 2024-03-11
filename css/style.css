@@ -239,6 +239,7 @@ main h2 {
 #update-button {
     border: none;
     padding: 20px 120px;
+    margin: 0px 0px 80px;
     background-color: #FA4A0C;
     color: white;
     border-radius: 30px;
@@ -462,7 +463,7 @@ main h2 {
     'FILL' 1;
     color: #FA4A0C;
     filter: drop-shadow(1px 1px 1rem #D73800);
-    transition: 0.5s ease           ;
+    transition: 0.5s ease;
 }
 
 .bottom-nav a:focus {
@@ -564,16 +565,17 @@ main h2 {
     }
 
     .article-grid h2 {
-        margin: 0 auto;
+        margin: 0;
         font-size: 1rem;
     }
     
     .article-grid h3 {
-        margin: 0 auto;
+        margin: 0;
         font-size: 1.7rem;
     }
 
     .article-grid p {
+        margin: 0;
         font-size: 1rem;
     }
 
@@ -583,7 +585,8 @@ main h2 {
 
     .article-flex {
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     #main-image {
@@ -601,12 +604,8 @@ main h2 {
         color: white;
     }
 
-    .article-flex {
-        justify-content: center;
-    }
-
     .article-items {
-        padding: 11px;
+        padding: 5px;
     }
 
     .main-flex .app-image {
@@ -635,6 +634,22 @@ main h2 {
 
     #header-logo {
         width: 10%;
+    }
+
+    .main-flex h3 {
+        margin-top: 50px;
+    }
+
+    .main-flex h1 {
+        margin: 10px 200px 30px;
+    }
+
+    .main-flex p {
+        font-size: 1.3rem;
+    }
+
+    .header-nav hr {
+        display: none;
     }
 
     /* Below are for product page */
@@ -688,6 +703,26 @@ main h2 {
 
     #profile-back-arrow {
         display: none;
+    }
+
+    .option-button {
+        padding: 50px 10px;
+    }
+
+    #profile-image {
+        float: none;
+        margin: 0 auto;
+        display: flex;
+        width: 30%;
+    }
+
+    .profile-content {
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .profile-item {
+        margin: 15px auto;
     }
 } 
 
