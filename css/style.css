@@ -228,6 +228,10 @@ main h3 {
     font-size: var(--large-par-size);
 }
 
+#hamburger-image {
+    display: none;
+}
+
 h1 {
     color: var(--h1-colour);
 }
@@ -546,6 +550,10 @@ main h2 {
 }
 
 #sign-out {
+    display: none;
+}
+
+.nav-item .material-symbols-outlined {
     display: none;
 }
 
@@ -868,62 +876,71 @@ main h2 {
     transition-duration: .25s;
 }
 
-.nav-item {
-    display: block;
-    padding: 12px 24px;
-    
-    color: #333;
-    
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 200;
-    padding: 20px;
-    
-    text-decoration: none;
-    
-    transition-duration: .25s;
-}
+    .nav-item {
+        display: block;
+        padding: 12px 24px;
+        
+        color: #333;
+        
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 200;
+        padding: 20px;
+        
+        text-decoration: none;
+        
+        transition-duration: .25s;
+    }
 
-.nav-item a {
-    text-decoration: none;
-    color: white;
-    font-weight: 400;
-    
-}
+    .nav-item a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        
+    }
 
-.nav-item a:hover {
-    background-color: #252b42;
-    border-radius: 10px;
-    padding: 0px 20px;
-    transition: 0.3s ease-in;
-}
+    .nav-item a:hover {
+        background-color: #252b42;
+        border-radius: 10px;
+        padding: 0px 20px;
+        transition: 0.3s ease-in;
+    }
 
-.nav-item:focus {
-    border: 2px solid black;
-}
+    .nav-item:focus {
+        border: 2px solid black;
+    }
 
-.nav-break {
-    border: 1px solid white;
-    opacity: 0.5;
-    width: 30%;
-    position: absolute;
-    left: 50px;
-    margin: 0px 20px;
-}
+    .nav-break {
+        border: 1px solid white;
+        opacity: 0.5;
+        width: 30%;
+        position: absolute;
+        left: 50px;
+        margin: 0px 20px;
+    }
 
-#sign-out {
-    align-items: flex-end;
-}
+    #sign-out {
+        align-items: flex-end;
+    }
 
-.nav-item .material-symbols-outlined {
-    color: white;
-    margin-right: 8px;
-}
+    .nav-item .material-symbols-outlined {
+        color: white;
+        margin-right: 8px;
+        display: inline;
+    }
 
-/* For products page */
-.product {
-    transform: translateX(100px);
-    object-fit: contain;
-    position: relative;
-}
+    #hamburger-image {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 105px;
+    }
+
+    /* For products page */
+    .product {
+        transform: translateX(100px);
+        object-fit: contain;
+        position: relative;
+    }
+
 }
