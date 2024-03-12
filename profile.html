@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -40,7 +40,7 @@
             <main role="main">
                     <div id="profile-heading">
                         <h2>Personal Details</h2>
-                        <a href="#" id="change">Change</a>
+                        <a href="#" id="change" aria-label="Change your profile">Change</a>
                     </div>
                     <div class="profile" itemscope itemtype="https://schema.org/Person">
                         <img id="profile-image" src="images/profile-picture.png" alt="John's profile picture">
@@ -56,20 +56,20 @@
                 </main>
             <nav class="options-select" role="navigation">
                 <ul>
-                    <li class="option-button">Orders <span class="material-symbols-outlined">
+                    <li class="option-button" aria-label="See your orders"><a href="#">Orders</a><span class="material-symbols-outlined">
                         navigate_next
                     </span></li>
-                    <li class="option-button">Pending Reviews <span class="material-symbols-outlined">
+                    <li class="option-button" aria-label="Check out pending reviews"><a href="#">Pending Reviews</a><span class="material-symbols-outlined">
                         navigate_next
                     </span></li>
-                    <li class="option-button">FAQ <span class="material-symbols-outlined">
+                    <li class="option-button" aria-label="See our frequently asked questions"><a href="#">FAQ</a><span class="material-symbols-outlined">
                         navigate_next
                     </span></li>
-                    <li class="option-button">Help <span class="material-symbols-outlined">
+                    <li class="option-button" aria-label="Get help"><a href="#">Help</a><span class="material-symbols-outlined">
                         navigate_next
                     </span></li>
                 </ul>
-                <button id="update-button">Update</button>
+                <button id="update-button" aria-label="Update Settings">Update</button>
             </nav>
     </div> <!--Closes wrapper-->
 </body>
