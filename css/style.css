@@ -627,7 +627,9 @@ main h2 {
 
     .main-background {
         background-image: url(../images/banner-image.png);
-        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 150%;
     }
 
     .article-flex {
@@ -643,6 +645,8 @@ main h2 {
 
     .app-download {
         background-image: url(../images/app-download-image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         padding: 165px;
         text-align: center;
     }
