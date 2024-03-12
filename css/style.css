@@ -645,8 +645,12 @@ main h2 {
         font-size: 0.9rem;
     }
 
-    #header-logo {
-        width: 10%;
+    .header-logo {
+        width: 80%;
+    }
+
+    .header-logo:focus {
+        border: 2px solid black;
     }
 
     .main-flex h3 {
@@ -736,6 +740,15 @@ main h2 {
 
     .profile-item {
         margin: 15px auto;
+    }
+
+    #profile-heading {
+        justify-content: space-between;
+        margin: 0px 200px;
+    }
+
+    .profile-wrapper h1 {
+        margin: 40px 0px;
     }
 } 
 
