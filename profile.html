@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="profile-wrapper"> <!-- Creates custom wrapper for this page-->
-        <header class="header-nav" id="main-nav">
+        <header class="header-nav" id="main-nav" role="banner">
             <a href="index.html"><img class="header-logo" src="images/logo-mockup.svg" alt="Logo for Bella Onojie"></a>
             <nav class="sidebar" role="navigation"> 
                 <div class="hamburger-menu">
@@ -23,12 +23,14 @@
                     </label>
 
                 <ul class="nav-menu">
-                    <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
-                    <hr class="nav-break">
-                    <li class="nav-item"><a href="profile.html" class="nav-link">Profile</a></li>
-                    <hr class="nav-break">
-                    <li class="nav-item"><a href="product.html" class="nav-link">Product</a></li>
-                    <hr class="nav-break">
+                    <li class="nav-item"> <span class="material-symbols-outlined">home</span> <a href="index.html" class="nav-link" aria-label="Come see our homepage">Home</a></li>
+                    <li><hr class="nav-break"></li>
+                    <li class="nav-item"><span class="material-symbols-outlined">person</span><a href="profile.html" class="nav-link" aria-label="Check out your profile">Profile</a></li>
+                    <li><hr class="nav-break"></li>
+                    <li class="nav-item"><span class="material-symbols-outlined">inventory_2</span><a href="product.html" class="nav-link" aria-label="View our products">Product</a></li>
+                    <li><hr class="nav-break"></li>
+                    <li id="sign-out" class="nav-item"><a href="#" aria-label="Sign out of your account">Sign-out</a><span class="material-symbols-outlined">arrow_right_alt</span></li>
+                    <li><img src="images/hamburger-app.png" alt="Image of app" id="hamburger-image"></li>
                 </ul>
                 </div>
             </nav>
