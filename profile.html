@@ -45,7 +45,18 @@
                         <a href="#" id="change" aria-label="Change your profile">Change</a>
                     </div>
                     <div class="profile" itemscope itemtype="https://schema.org/Person">
-                        <img id="profile-image" src="images/profile-picture.png" alt="John's profile picture">
+                        <picture>
+                            <source srcset="images/profile-picture-160_x_160.png"
+                            media="(max-width: 414px)">
+                            <source srcset="images/profile-picture-600_x_980.png"
+                            media="(min-width: 660px)">
+                            <source srcset="images/profile-picture-800_x_1200.png"
+                            media="(min-width: 1000px)">
+
+                            <img id="profile-image" 
+                            src="images/profile-picture.png" 
+                            alt="John's profile picture">
+                        </picture>
                         <div class="profile-content">
                             <h2 itemprop="name" class="profile-item">John Doe</h2>
                             <p itemprop="email" class="profile-item">JohnDoe@gmail.com</p>

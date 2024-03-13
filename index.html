@@ -57,8 +57,8 @@
                     id="main-image">
                 <h2>How the app works</h2>
             </div> <!-- Close div for flexbox-->   
+            <hr class="line-break"> <!--Creates line to break up page-->
         </main>
-        <hr class="line-break"> <!--Creates line to break up page-->
         <div class="article-grid"> <!--Makes text and items into grids so it can change from a column layout in mobile into a 2 column layout in desktop -->
             <article class="article-flex">
                 <h2 class="article-items">Create an account</h2>
@@ -66,12 +66,17 @@
                 <p class="article-items">An account is created with your email and a desired password.</p>
             </article>
 
-            <img
-                    srcset="images/app-login-600_x_980.png,
-                            images/app-login-800_x_1200.png 2x"
-                    src="images/app-login.png"
-                    alt="Login screen of app"
-                    class="app-image">
+            <picture>
+                <source srcset="images/app-login-500_x_700.png"
+                media="(max-width: 414px)">
+
+                <source srcset="images/app-login-800_x_1000.png"
+                media="(min-width: 414px)">
+
+                <img class="app-image" 
+                src="images/app-login.png" 
+                alt="Image of apps login screen">
+            </picture>
 
             <article class="article-flex">
                 <h2 class="article-items">Explore while shopping</h2>
@@ -79,12 +84,17 @@
                 <p class="article-items">Shop for your favorite meals or drinks, and enjoy while doing it.</p>
             </article>
 
-            <img
-                    srcset="images/app-login-600_x_980.png,
-                            images/app-login-800_x_1200.png 2x"
-                    src="images/app-login.png"
-                    alt="Login screen of app"
-                    class="app-image">
+            <picture>
+                <source srcset="images/product-screen-500_x_700.png"
+                media="(max-width: 414px)">
+
+                <source srcset="images/product-screen-800_x_1000.png"
+                media="(min-width: 414px)">
+
+                <img class="app-image" 
+                src="images/product-screen.png" 
+                alt="Image of product page on app">
+            </picture>
 
             <article class="article-flex">
                 <h2 class="article-items">Checkout</h2>
@@ -92,12 +102,17 @@
                 <p class="article-items">Here you can checkout to get your food delivered fast and easily.</p>
             </article>
 
-            <img
-                    srcset="images/app-login-600_x_980.png,
-                            images/app-login-800_x_1200.png 2x"
-                    src="images/app-login.png"
-                    alt="Login screen of app"
-                    class="app-image">
+            <picture>
+                <source srcset="images/payment-screen-500_x_700.png"
+                media="(max-width: 414px)">
+
+                <source srcset="images/payment-screen-800_x_1000.png"
+                media="(min-width: 414px)">
+
+                <img class="app-image" 
+                src="images/payment-screen.png" 
+                alt="Image of payment screen of app">
+            </picture>
         </div>
 
         <section class="app-download" itemscope itemtype="https://schema.org/Product" role="complementary">
@@ -108,9 +123,9 @@
         </section>
 
         <footer class="home-footer" itemscope itemtype="https://schema.org/Organization" role="contentinfo">
-            <a href="#"><img id="footer-logo" src="images/logo-mockup.svg" alt="Logo for Bella Onojie" itemprop="logo"></a>
-            <img src="images/social-media.svg" alt="Social media icons" id="social-media" aria-label="Check out our social media">
-            <p itemprop="brand">Copyright 2020 Bella Onojie</p>
+            <a href="#"><img class="footer-item" id="footer-logo" src="images/logo-mockup.svg" alt="Logo for Bella Onojie" itemprop="logo"></a>
+            <img src="images/social-media.svg" alt="Social media icons" id="social-media" class="footer-item" aria-label="Check out our social media">
+            <p itemprop="brand" class="footer-item">Copyright 2020 Bella Onojie</p>
         </footer>
     </div> <!--Closes wrapper-->
 </body>

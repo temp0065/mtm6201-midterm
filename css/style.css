@@ -49,7 +49,7 @@ body {
     display: grid;
     /* Keeps them displayed in a column format */
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 400px 700px);
+    grid-template-rows: repeat(3, 400px 600px);
 }
 
 .article-grid p {
@@ -439,7 +439,7 @@ main h2 {
     display: grid;
     grid-template-columns: 200px 200px;
     gap: 10px;
-    margin: 40px 0;
+    margin: 40px 0px 200px;
 }
 
 .product-content {
@@ -506,6 +506,7 @@ main h2 {
 
 #profile-image {
     float: left;
+    width: 30%;
 }
 
 #footer-logo {
@@ -559,6 +560,10 @@ main h2 {
     display: none;
 }
 
+#shopping-cart {
+    color: #bebebe;
+}
+
 @media (min-width: 415px) {
     .wrapper {
         width: 100%;
@@ -601,13 +606,18 @@ main h2 {
     }
 
     .article-grid {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 500px 400px;
         grid-template-rows: repeat(3, 400px);
-        gap: 0px;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .article-grid:nth-child(1) {
+        width: 5%;
     }
 
     .article-grid .app-image {
-        width: 50%;
+        width: 70%;
     }
 
     .article-grid h2 {
@@ -630,6 +640,7 @@ main h2 {
         background-repeat: no-repeat;
         background-size: cover;
         width: 150%;
+        padding: 100px;
     }
 
     .article-flex {
@@ -639,8 +650,8 @@ main h2 {
     }
 
     #main-image {
-        width: 40%;
-        margin: 0 auto;
+        width: 30%;
+        margin: 0px auto;
     }
 
     .app-download {
@@ -665,6 +676,7 @@ main h2 {
 
     .line-break {
         width: 60%;
+        margin: 0 auto;
     }
 
     /* Makes the logo visible in larger sizes */
@@ -770,7 +782,7 @@ main h2 {
     }
 
     .option-button {
-        padding: 50px 550px;
+        padding: 30px 400px;
         font-size: 5rem;
     }
 
@@ -791,7 +803,8 @@ main h2 {
         float: none;
         margin: 0 auto;
         display: flex;
-        width: 30%;
+        width: 25%;
+        border-radius: 20px;
     }
 
     .profile-content {
@@ -813,7 +826,7 @@ main h2 {
     }
 } 
 
-@media (max-width: 460px) {
+@media (max-width: 414px) {
 
     #menu__toggle {
         opacity: 0;
@@ -959,9 +972,32 @@ main h2 {
     /* For products page */
     .product {
         transform: translateX(100px);
-        object-fit: contain;
-        position: relative;
-        overflow: hidden;
     }
 
+    #shopping-cart {
+        position: fixed;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 700px) {
+    .header-logo {
+        width: 200%;
+        margin-right: 20px;
+    }
+
+    /* Settings for homepage */
+    .footer-item {
+        margin: 0px 20px
+    }
+
+    .nav-menu {
+        justify-content: flex-end;
+        margin: 0px 20px;
+        padding-left: 50px;
+    }
+
+    /* Settings for profile */
+    #profile-heading {
+        margin: 0 50px;
+    }
 }
