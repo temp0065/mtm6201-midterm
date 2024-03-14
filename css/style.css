@@ -291,6 +291,10 @@ main h2 {
     display: block;
 }
 
+.option-button a:hover {
+    color: white;
+}
+
 .option-button {
     display: flex;
     justify-content: space-between;
@@ -414,13 +418,12 @@ main h2 {
     text-decoration: none;
 }
 
-#see-more:hover {
+#see-more {
     text-decoration: underline;
     animation-name: pulsate;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
     animation-direction: alternate;
-    animation-fill-mode: forwards;
 }
 
 #see-more:focus {
@@ -433,7 +436,6 @@ main h2 {
     }
     100% {
         transform: scaleY(2);
-        transform: scaleX(1);
     }
 }
 
@@ -672,8 +674,9 @@ main h2 {
     }
 
     #main-image {
-        width: 30%;
-        margin: 200px auto 0px;
+        width: 22%;
+        transform: translateY(120px);
+        position: absolute;
     }
 
     .app-download {
@@ -739,6 +742,10 @@ main h2 {
         font-size: 1.3rem;
         color: white;
         font-weight: normal;
+    }
+
+    #main-content h2 {
+        margin-top: 400px;
     }
 
     .header-nav hr {
@@ -851,6 +858,10 @@ main h2 {
     .profile-wrapper h1 {
         margin: 40px 0px;
         font-size: 3rem;
+    }
+
+    .nav-item #shopping-cart {
+        display: none;
     }
 } 
 
@@ -1021,6 +1032,10 @@ main h2 {
         top: 30px;
         left: 40px;
     }
+
+    #shopping-cart-2 {
+        display: none;
+    }
 }
 
 @media (min-width: 460px) and (max-width: 700px) {
@@ -1063,6 +1078,15 @@ main h2 {
 
     .profile-wrapper h1 {
         font-size: 2.4rem;
+    }
+
+    #main-image {
+        width: 58%;
+        transform: translateY(200px);
+    }
+
+    #main-content h2 {
+        margin-top: 600px;
     }
 }
 
