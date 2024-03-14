@@ -640,6 +640,11 @@ main h2 {
         justify-content: center;
     }
 
+    #order-change{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3
+    }
+
     .article-grid .app-image {
         width: 70%;
     }
