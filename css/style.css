@@ -190,6 +190,10 @@ main h3 {
     margin-left: 38px;
 }
 
+.search:focus {
+    border: 3px solid black;
+}
+
 .search-bar {
     background: transparent;
     flex: 1;
@@ -428,7 +432,8 @@ main h2 {
        transform: scale(1); 
     }
     100% {
-        transform: scale(2);
+        transform: scaleY(2);
+        transform: scaleX(1);
     }
 }
 
@@ -598,7 +603,7 @@ main h2 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 20px;
+        padding: 0 60px;
     }
     
     .nav-menu {
@@ -668,7 +673,7 @@ main h2 {
 
     #main-image {
         width: 30%;
-        margin: 0px auto;
+        margin: 200px auto 0px;
     }
 
     .app-download {
@@ -750,7 +755,6 @@ main h2 {
         border: 1px solid #FA4A0C;
     }
 
-    /* Below are for product page */
     .search {
         margin: 0 auto;
         width: 30%;
@@ -846,12 +850,7 @@ main h2 {
 
     .profile-wrapper h1 {
         margin: 40px 0px;
-    }
-
-    #shopping-cart {
-        position: absolute;
-        font-size: 2.4rem;
-        right: 1000px;
+        font-size: 3rem;
     }
 } 
 
@@ -1003,8 +1002,24 @@ main h2 {
         transform: translateX(100px);
     }
 
+    /* Moves to the right */
     #shopping-cart {
-        position: fixed;
+        display: block;
+        font-size: 2rem;
+        text-align: right;
+    }
+
+    .header-logo {
+        display: none;
+    }
+
+    .bottom-nav {
+        padding: 0px 0px 20px;
+    }
+
+    .products .menu__btn {
+        top: 30px;
+        left: 40px;
     }
 }
 
@@ -1036,5 +1051,35 @@ main h2 {
         grid-template-columns: 200px 400px;
         grid-template-rows: repeat(3, 400px);
         gap: 10px;
+    }
+
+    .option-button {
+        padding: 20px 40px;
+    }
+
+    #update-button {
+        padding: 20px 200px;
+    }
+
+    .profile-wrapper h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Fixes issue of see more from being covered by products */
+    #see-more {
+        margin: 30px 40px 80px;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 414px) {
+
+    .app-download{
+        padding: 20px 100px;
+    }
+
+    .app-download h2 {
+        margin-top: 20px;
     }
 }
