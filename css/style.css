@@ -866,7 +866,6 @@ main h2 {
 } 
 
 @media (max-width: 414px) {
-
     #menu__toggle {
         opacity: 0;
       }
@@ -942,7 +941,7 @@ main h2 {
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
     
     transition-duration: .25s;
-}
+    }
 
     .nav-item {
         display: block;
@@ -950,7 +949,7 @@ main h2 {
         
         color: #333;
         
-        font-family: 'Roboto', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: 1.1rem;
         font-weight: 200;
         padding: 20px;
