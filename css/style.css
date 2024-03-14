@@ -411,10 +411,24 @@ main h2 {
 
 #see-more:hover {
     text-decoration: underline;
+    animation-name: pulsate;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
 }
 
 #see-more:focus {
     border: 2px solid black;
+}
+
+@keyframes pulsate {
+    0% {
+       transform: scale(1); 
+    }
+    100% {
+        transform: scale(2);
+    }
 }
 
 .food-categories a:hover {
@@ -424,6 +438,7 @@ main h2 {
     text-underline-offset: 10px;
     /* Eases into hover transition so it does not appear too abrupt */
     transition: 0.3s ease;
+    filter: drop-shadow(1px 1px 1.5rem #fa4a0c);
 }
 
 .food-categories a:focus {
@@ -442,6 +457,12 @@ main h2 {
     margin: 40px 0px 200px;
 }
 
+.product-content:hover {
+    transform: translateY(-20px);
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(1px 3px 0.5rem #fa4b0c83);
+}
+
 .product-content {
     display: flex;
     flex-direction: column;
@@ -456,8 +477,6 @@ main h2 {
 
 .product-image {
     width: 100%;
-    margin: 0 auto;
-    z-index: 2;
     filter: drop-shadow(1px 1px 1rem #00000033);
     margin: -50px 0px;
 }
@@ -564,7 +583,7 @@ main h2 {
     color: #bebebe;
 }
 
-@media (min-width: 415px) {
+@media (min-width: 414px) {
     .wrapper {
         width: 100%;
     }
@@ -612,8 +631,12 @@ main h2 {
         justify-content: center;
     }
 
-    .article-grid:nth-child(1) {
-        width: 5%;
+    .article-grid .article-flex:nth-child(1) {
+        order: 2;
+    }
+
+    .article-grid .app-image:nth-child(2) {
+        order: -1;
     }
 
     .article-grid .app-image {
@@ -647,6 +670,7 @@ main h2 {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        text-align: start;
     }
 
     #main-image {
@@ -728,6 +752,11 @@ main h2 {
         border: 1px solid white;
     }
 
+    .round-button-2:hover {
+        color: white;
+        border: 1px solid #FA4A0C;
+    }
+
     /* Below are for product page */
     .search {
         margin: 0 auto;
@@ -773,8 +802,9 @@ main h2 {
         justify-content: center;
     }
 
+    /* Sets it so it appears on profile page aswell */
     .profile-wrapper .header-nav {
-        display: block;
+        display: flex;
     }
 
     #profile-back-arrow {
@@ -823,6 +853,12 @@ main h2 {
 
     .profile-wrapper h1 {
         margin: 40px 0px;
+    }
+
+    #shopping-cart {
+        position: absolute;
+        font-size: 2.4rem;
+        right: 1000px;
     }
 } 
 
@@ -999,5 +1035,13 @@ main h2 {
     /* Settings for profile */
     #profile-heading {
         margin: 0 50px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 1000px) {
+    .article-grid {
+        grid-template-columns: 200px 400px;
+        grid-template-rows: repeat(3, 400px);
+        gap: 10px;
     }
 }
