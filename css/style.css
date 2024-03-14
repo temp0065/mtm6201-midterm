@@ -177,6 +177,7 @@ main h3 {
     margin: 0 auto;
     width: 100%;
     display: block;
+    filter: drop-shadow(15px 10px 1rem rgba(0, 0, 0, 0.183));
 }
 
 .search {
@@ -627,16 +628,8 @@ main h2 {
     .article-grid {
         grid-template-columns: 500px 400px;
         grid-template-rows: repeat(3, 400px);
-        gap: 10px;
+        gap: 60px;
         justify-content: center;
-    }
-
-    .article-grid .article-flex:nth-child(1) {
-        order: 2;
-    }
-
-    .article-grid .app-image:nth-child(2) {
-        order: -1;
     }
 
     .article-grid .app-image {
