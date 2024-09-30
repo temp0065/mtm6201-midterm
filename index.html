@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <link href="css/reset.css" rel="reset">
+    <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -42,23 +42,23 @@
         </header> 
         <main class="main-home" id="main-content" role="main">
             <div class="main-flex">
-                <div class="main-background">
-                    <h3>Food app</h3>
-                    <h1>Why stay hungry when you can order from Bella Onojie</h1>
-                    <p>Download the Bella Onoje's food app now on</p>
-                    <button class="round-button-1" aria-label="Go to the Playstore">Playstore</button>
-                    <button class="round-button-2" aria-label="Go to the App Store">App Store</button>
+                <h3 class="main-flex-item">Food app</h3>
+                <h1 class="main-flex-item">Why stay hungry when you can order from Bella Onojie</h1>
+                <p class="main-flex-item">Download the Bella Onoje's food app now on</p>
+                <div class="main-buttons">
+                    <a class="round-button-1" href="#" aria-label="Go to the Playstore">Playstore</a>
+                    <a class="round-button-2" href="#" aria-label="Go to the App Store">App Store</a>
                 </div>
-
-                <img
-                    srcset="images/app-photo-600_x_980.png,
-                            images/app-photo-900_x_1050.png 2x"
-                    src="images/app-photo.png"
-                    alt="Image of the app"
-                    id="main-image">
-                    
-                <h2>How the app works</h2>
             </div> <!-- Close div for flexbox-->   
+
+            <img
+                srcset="images/app-photo-600_x_980.png,
+                        images/app-photo-900_x_1050.png 2x"
+                src="images/app-photo.png"
+                alt="Image of the app"
+                id="main-image">
+                
+            <h2>How the app works</h2>
             <hr class="line-break"> <!--Creates line to break up page-->
         </main>
         <div class="article-grid"> <!--Makes text and items into grids so it can change from a column layout in mobile into a 2 column layout in desktop -->
@@ -75,7 +75,7 @@
                 <source srcset="images/app-login-800_x_1000.png"
                 media="(min-width: 414px)">
 
-                <img class="app-image" 
+                <img class="app-image"
                 src="images/app-login.png" 
                 alt="Image of apps login screen">
             </picture>
@@ -118,10 +118,12 @@
         </div>
 
         <section class="app-download" itemscope itemtype="https://schema.org/Product" role="complementary">
-            <h2>Download the app now</h2>
-            <p>Click the buttons to purchase the app, or try it for free.</p>
-            <button class="square-button-1" aria-label="Click here to buy the app">Buy Now</button>
-            <button class="square-button-2" aria-label="Click here to try the app for free">Try For Free</button>
+            <h2 class="download-flex-item">Download the app now</h2>
+            <p class="download-flex-item">Click the buttons to purchase the app, or try it for free.</p>
+            <div class="download-buttons download-flex-item">
+                <a class="square-button-1" aria-label="Click here to buy the app" href="#">Buy Now</a>
+                <a class="square-button-2" aria-label="Click here to try the app for free" href="#">Try For Free</a>
+            </div>
         </section>
 
         <footer class="home-footer" itemscope itemtype="https://schema.org/Organization" role="contentinfo">
