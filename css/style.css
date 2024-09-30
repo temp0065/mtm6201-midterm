@@ -582,6 +582,10 @@ main h2 {
     display: none;
 }
 
+.footer-item {
+    margin: 20px 0;
+}
+
 /* #social-media {
     transition: ;
 } */
